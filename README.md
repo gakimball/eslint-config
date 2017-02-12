@@ -24,7 +24,7 @@ In your `.eslintrc`:
 
 ## Overview
 
-Extends the default eslint config, and adds the `import` plugin. Includes these hot rules:
+Extends the default eslint config, parses with Babel, and adds the `import` plugin. Includes these hot rules:
 
 - Two spaces for indentation.
 - Single quotes.
