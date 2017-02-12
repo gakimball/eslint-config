@@ -2,7 +2,7 @@
 
 > Don't tell me how to live my life
 
-[![npm](https://img.shields.io/npm/v/eslint-config.svg?maxAge=2592000)](https://www.npmjs.com/package/@gakimball/eslint-config)
+[![npm](https://img.shields.io/npm/v/@gakimball/eslint-config.svg?maxAge=2592000)](https://www.npmjs.com/package/@gakimball/eslint-config)
 
 I'm horribly pedantic when it comes to writing code.
 
