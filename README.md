@@ -4,6 +4,8 @@
 
 [![npm](https://img.shields.io/npm/v/eslint-config.svg?maxAge=2592000)](https://www.npmjs.com/package/@gakimball/eslint-config)
 
+I'm horribly pedantic when it comes to writing code.
+
 ## Installation
 
 ```bash
@@ -26,7 +28,19 @@ Extends the default eslint config, and adds the `import` plugin. Includes these 
 
 - Two spaces for indentation.
 - Single quotes.
+- Rigid JSDoc enforcement:
+  - Functions, classes, and class methods must have documentation.
+  - No use of annotation synonyms.
+  - All parameters, props, and return values must have descriptions.
 - More, once I figure out what I want.
+- Allow functions to be defined after they're first referenced. (Yay hoisting!)
+- `if`/`else` go on separate lines. *(This is my stupid hill and I will die on it.)*
+- Consistent return values optional.
+- Prefer `const`, then `let`, but never `var`.
+- Capitalize the first word in a comment.
+- Put spaces around inline objects.
+- Always use `===` and `!==`.
+- Class methods must use `this` (otherwise they can be static).
 
 ## Local Development
 
