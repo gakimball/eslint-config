@@ -1,9 +1,11 @@
 module.exports = {
   extends: [
     'eslint',
+    'plugin:react/recommended',
   ],
   plugins: [
     'import',
+    'react',
   ],
   parser: 'babel-eslint',
   parserOptions: {
@@ -17,20 +19,26 @@ module.exports = {
     node: true,
   },
   rules: {
+    'array-callback-return': 'off',
     'brace-style': ['error', 'stroustrup'],
+    'callback-return': 'off',
     'capitalized-comments': ['error', 'always', {
       ignoreConsecutiveComments: true,
     }],
-    'class-methods-use-this': 'error',
+    'class-methods-use-this': ['error', {
+      exceptMethods: ['render'],
+    }],
     'consistent-return': 'off',
     'comma-dangle': ['error', 'always-multiline'],
     'dot-location': ['error', 'property'],
     'dot-notation': 'error',
     eqeqeq: 'error',
+    'func-style': 'off',
+    'guard-for-in': 'off',
     indent: ['error', 2, {
       SwitchCase: 1,
     }],
-    'no-invalid-this': 0,
+    'no-invalid-this': 'off',
     'no-unused-expressions': ['error', {
       allowShortCircuit: true,
     }],
@@ -42,14 +50,7 @@ module.exports = {
     'prefer-const': 'error',
     radix: ['error', 'as-needed'],
     quotes: ['error', 'single'],
-    'require-jsdoc': ['error', {
-      require: {
-        ArrowFunctionExpression: false,
-        ClassDeclaration: true,
-        FunctionDeclaration: true,
-        MethodDefinition: true,
-      }
-    }],
+    'require-jsdoc': 'off',
     'valid-jsdoc': ['error', {
       prefer: {
         arg: 'param',
@@ -67,8 +68,10 @@ module.exports = {
         virtual: 'abstract',
       },
       requireReturn: false,
-      requireReturnDescription: true,
+      requireReturnType: true,
+      requireReturnDescription: false,
       requireParamDescription: true,
+      matchDescription: '.+',
     }],
   },
 };

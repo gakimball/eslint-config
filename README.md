@@ -28,11 +28,7 @@ Extends the default eslint config, parses with Babel, and adds the `import` plug
 
 - Two spaces for indentation.
 - Single quotes.
-- Rigid JSDoc enforcement:
-  - Functions, classes, and class methods must have documentation.
-  - No use of annotation synonyms.
-  - All parameters, props, and return values must have descriptions.
-- More, once I figure out what I want.
+- More rigit JSDoc enforcement.
 - Allow functions to be defined after they're first referenced. (Yay hoisting!)
 - `if`/`else` go on separate lines. *(This is my stupid hill and I will die on it.)*
 - Consistent return values optional.
