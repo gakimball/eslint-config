@@ -49,6 +49,7 @@ module.exports = {
     radix: ['error', 'as-needed'],
     quotes: ['error', 'single'],
     'require-jsdoc': 'off',
+    strict: 'off',
     'valid-jsdoc': ['error', {
       prefer: {
         arg: 'param',
