@@ -39,9 +39,7 @@ module.exports = {
       SwitchCase: 1,
     }],
     'no-invalid-this': 'off',
-    'no-unused-expressions': ['error', {
-      allowShortCircuit: true,
-    }],
+    'no-unused-expressions': 'off',
     'no-use-before-define': ['error', {
       functions: false,
     }],
