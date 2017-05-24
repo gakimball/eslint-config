@@ -20,7 +20,9 @@ module.exports = {
   },
   rules: {
     'array-callback-return': 'off',
-    'brace-style': ['error', 'stroustrup'],
+    'brace-style': ['error', 'stroustrup', {
+      allowSingleLine: true,
+    }],
     'callback-return': 'off',
     'capitalized-comments': ['error', 'always', {
       ignoreConsecutiveComments: true,
