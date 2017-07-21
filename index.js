@@ -6,6 +6,7 @@ module.exports = {
   plugins: [
     'import',
     'react',
+    'mocha',
   ],
   parser: 'babel-eslint',
   parserOptions: {
@@ -48,6 +49,7 @@ module.exports = {
     }],
     'no-var': 'error',
     'object-curly-spacing': ['error', 'always'],
+    'object-shorthand': ['error', 'always'],
     'prefer-const': 'error',
     quotes: ['error', 'single'],
     radix: ['error', 'as-needed'],
@@ -76,6 +78,16 @@ module.exports = {
       requireParamDescription: true,
       matchDescription: '.+',
     }],
-    yoda: 'error'
+    yoda: 'error',
+    'mocha/handle-done-callback': 'error',
+    'mocha/no-global-tests': 'error',
+    'mocha/no-hooks-for-single-case': 'error',
+    'mocha/no-identical-title': 'error',
+    'mocha/no-nested-tests': 'error',
+    'mocha/no-pending-tests': 'error',
+    'mocha/no-return-and-callback': 'error',
+    'mocha/no-sibling-hooks': 'error',
+    'mocha/no-skipped-tests': 'error',
+    'mocha/no-top-level-hooks': 'error',
   },
 };
