@@ -8,6 +8,7 @@ module.exports = {
     'react',
     'mocha',
     'chai-expect',
+    'chai-friendly',
   ],
   parser: 'babel-eslint',
   parserOptions: {
@@ -45,6 +46,7 @@ module.exports = {
     'no-invalid-this': 'off',
     'no-multi-spaces': 'error'
     'no-shadow': 'error',
+    'no-unused-expressions': 'off',
     'no-use-before-define': ['error', {
       functions: false,
     }],
@@ -93,5 +95,6 @@ module.exports = {
     'chai-expect/no-inner-compare': 'error',
     'chai-expect/missing-assertion': 'error',
     'chai-expect/terminating-properties': 'error',
+    'chai-friendly/no-unused-expressions': 'error',
   },
 };
