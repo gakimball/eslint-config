@@ -7,6 +7,7 @@ module.exports = {
     'import',
     'react',
     'mocha',
+    'chai-expect',
   ],
   parser: 'babel-eslint',
   parserOptions: {
@@ -89,5 +90,8 @@ module.exports = {
     'mocha/no-sibling-hooks': 'error',
     'mocha/no-skipped-tests': 'error',
     'mocha/no-top-level-hooks': 'error',
+    'chai-expect/no-inner-compare': 'error',
+    'chai-expect/missing-assertion': 'error',
+    'chai-expect/terminating-properties': 'error',
   },
 };
