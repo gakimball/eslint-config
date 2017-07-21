@@ -1,6 +1,6 @@
 module.exports = {
   extends: [
-    'eslint',
+    'eslint:recommended',
     'plugin:react/recommended',
   ],
   plugins: [
@@ -19,7 +19,6 @@ module.exports = {
     node: true,
   },
   rules: {
-    'array-callback-return': 'off',
     'brace-style': ['error', 'stroustrup', {
       allowSingleLine: true,
     }],
@@ -32,6 +31,7 @@ module.exports = {
     }],
     'consistent-return': 'off',
     'comma-dangle': ['error', 'always-multiline'],
+    curly: ['error', 'all']
     'dot-location': ['error', 'property'],
     'dot-notation': 'error',
     eqeqeq: 'error',
@@ -41,15 +41,17 @@ module.exports = {
       SwitchCase: 1,
     }],
     'no-invalid-this': 'off',
-    'no-unused-expressions': 'off',
+    'no-multi-spaces': 'error'
+    'no-shadow': 'error',
     'no-use-before-define': ['error', {
       functions: false,
     }],
     'no-var': 'error',
     'object-curly-spacing': ['error', 'always'],
     'prefer-const': 'error',
-    radix: ['error', 'as-needed'],
     quotes: ['error', 'single'],
+    radix: ['error', 'as-needed'],
+    'require-await': 'error',
     'require-jsdoc': 'off',
     strict: 'off',
     'valid-jsdoc': ['error', {
@@ -74,5 +76,6 @@ module.exports = {
       requireParamDescription: true,
       matchDescription: '.+',
     }],
+    yoda: 'error'
   },
 };
